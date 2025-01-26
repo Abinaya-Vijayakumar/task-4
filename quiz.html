@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Niconne&family=Paprika&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz Application</h1>
+    <form id="quiz-form">
+      <!-- Question 1 -->
+      <div class="question">
+        <h3>1. What is the capital of France?</h3>
+        <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+        <label><input type="radio" name="q1" value="London"> London</label><br>
+        <label><input type="radio" name="q1" value="Rome"> Rome</label><br>
+        <label><input type="radio" name="q1" value="Berlin"> Berlin</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <h3>2. Which programming language is used for web development?</h3>
+        <label><input type="radio" name="q2" value="Python"> Python</label><br>
+        <label><input type="radio" name="q2" value="Java"> Java</label><br>
+        <label><input type="radio" name="q2" value="JavaScript"> JavaScript</label><br>
+        <label><input type="radio" name="q2" value="C++"> C++</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <h3>3. What is the result of 5 + 3?</h3>
+        <label><input type="radio" name="q3" value="7"> 7</label><br>
+        <label><input type="radio" name="q3" value="8"> 8</label><br>
+        <label><input type="radio" name="q3" value="9"> 9</label><br>
+        <label><input type="radio" name="q3" value="10"> 10</label>
+      </div>
+
+      <div class="question">
+        <h3>4. What is the capital of Japan?</h3>
+        <label><input type="radio" name="q4" value="Tokyo"> Tokyo</label><br>
+        <label><input type="radio" name="q4" value="Beijing"> Beijing</label><br>
+        <label><input type="radio" name="q4" value="Seoul"> Seoul</label><br>
+        <label><input type="radio" name="q4" value="Bangkok"> Bangkok</label>
+      </div>
+
+      <div class="question">
+        <h3>5. Which planet is known as the "Red Planet"?</h3>
+        <label><input type="radio" name="q5" value="Tokyo">  Earth</label><br>
+        <label><input type="radio" name="q5" value="Beijing"> Mars</label><br>
+        <label><input type="radio" name="q5" value="Seoul"> Jupiter</label><br>
+        <label><input type="radio" name="q5" value="Bangkok"> Venus</label>
+      </div>
+
+
+      <div class="question">
+        <h3>6. Who invented the World Wide Web?</h3>
+        <label><input type="radio" name="q6" value="Tokyo">  Tim Berners-Lee</label><br>
+        <label><input type="radio" name="q6" value="Beijing"> Steve Jobs</label><br>
+        <label><input type="radio" name="q6" value="Seoul"> Bill Gates</label><br>
+        <label><input type="radio" name="q6" value="Bangkok">Mark Zuckerberg</label>
+      </div>
+
+
+      <div class="question">
+        <h3>7.Which programming language is primarily used for Android development?</h3>
+        <label><input type="radio" name="q7" value="Tokyo">  Swift</label><br>
+        <label><input type="radio" name="q7" value="Beijing">  Java</label><br>
+        <label><input type="radio" name="q7" value="Seoul">  Python</label><br>
+        <label><input type="radio" name="q7" value="Bangkok"> C++</label>
+      </div>
+
+
+      <div class="question">
+        <h3>8. What does HTML stand for?</h3>
+        <label><input type="radio" name="q8" value="Tokyo">   HyperText Markup Language</label><br>
+        <label><input type="radio" name="q8" value="Beijing">  HighText Machine Language</label><br>
+        <label><input type="radio" name="q8" value="Seoul"> HyperText Machine Language</label><br>
+        <label><input type="radio" name="q8" value="Bangkok">Hyper Transfer Markup Language</label>
+      </div>
+
+      <div class="question">
+        <h3>9. What does CSS stand for?</h3>
+        <label><input type="radio" name="q8" value="Tokyo">    Creative Style Sheets</label><br>
+        <label><input type="radio" name="q8" value="Beijing">  Cascading Style Sheets</label><br>
+        <label><input type="radio" name="q8" value="Seoul"> Computer Style Sheets</label><br>
+        <label><input type="radio" name="q8" value="Bangkok">Colorful Style Sheets</label>
+      </div>
+
+
+      <div class="question">
+        <h3>10. What is the output of 5 + 3 * 2 in programming (following BODMAS)?</h3>
+        <label><input type="radio" name="q8" value="Tokyo"> 16</label><br>
+        <label><input type="radio" name="q8" value="Beijing">13</label><br>
+        <label><input type="radio" name="q8" value="Seoul"> 11</label><br>
+        <label><input type="radio" name="q8" value="Bangkok">10</label>
+      </div>
+
+
+      <button type="button" id="submit-btn">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
